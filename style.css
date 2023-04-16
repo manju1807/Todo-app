@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right bottom,rgb(255, 150, 75),rgb(254, 83, 83));
+    color: #0FC57C;
+    font-family: Lato, sans-serif;
+  }
+ 
+  .container {
+    background-image: linear-gradient(135deg,rgb(44, 41, 41),rgb(0, 0, 0));
+    display: block;
+    width: 450px;
+    border-radius: 3px;
+    margin: 100px auto 0;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    color: #0FC57C;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  li * {
+    float: left;
+  }
+  
+  li, h3 {
+    clear:both;
+    list-style:none;
+  }
+  
+  input, button {
+    outline: none;
+  }
+  
+  button {
+    background: none;
+    border: 0px;
+    color: #0FC57C;
+    font-size: 15px;
+    width: 60px;
+    margin: 10px 0 0;
+    font-family: Lato, sans-serif;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    color: #c50f0f;
+  }
+  
+  
+  h3,
+  label[for='new-task'] {
+    color: #0FC57C;
+    font-weight: 700;
+    font-size: 15px;
+    border-bottom: 2px solid #333;
+    padding: 30px 0 10px;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  
+  input[type="text"] {
+    margin: 0;
+    font-size: 18px;
+    line-height: 18px;
+    height: 18px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 6px;
+    font-family: Lato, sans-serif;
+    color: #464343;
+  }
+  
+  input[type="text"]:focus {
+    color: #000000;
+  }
+  
+  
+  label[for='new-task'] {
+    display: block;
+    margin: 0 0 20px;
+  }
+  
+  input#new-task {
+    float: left;
+    width: 318px;
+  }
+  p > button:hover {
+    color: #0FC57C;
+  }
+  
+  li {
+    overflow: hidden;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  li > input[type="checkbox"] {
+    margin: 0 10px;
+    position: relative;
+    top: 15px;
+  }
+  
+  li > label {
+    font-size: 18px;
+    line-height: 40px;
+    width: 237px;
+    padding: 0 0 0 11px;
+  }
+  
+  li >  input[type="text"] {
+    width: 226px;
+  }
+  
+  li > .delete:hover {
+    color: #CF2323;
+  }
+  
+  
+  #completed-tasks label {
+    text-decoration: line-through;
+    color: #0FC57C;
+  }
+  
+  
+  ul li input[type=text] {
+    display:none;
+  }
+  
+  ul li.editMode input[type=text] {
+    display:block;
+  }
+  
+  ul li.editMode label {
+    display:none;
+  }
+
+  /* Mobile devices */
+@media only screen and (max-width: 767px) {
+    /* CSS rules for mobile devices */
+    .container{
+        width: 80%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+    }
+  }
+  
+  /* Tablet devices */
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* CSS rules for tablet devices */
+    .container{
+        width: 80%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+    }
+  }
+
+    /* Desktop devices */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    /* CSS rules for desktop devices */
+    .container{
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+    }
+  }
